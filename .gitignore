@@ -26,4 +26,4 @@ dist-ssr
 # Custom
 .firebaserc
 firebase.json
-.firebase
+.firebase/*
