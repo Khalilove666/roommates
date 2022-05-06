@@ -44,7 +44,7 @@ onMounted(() => {
     border: 2px solid $color-accent;
     background-color: white;
     cursor: ew-resize;
-    background-image: url("src/assets/range-thumb.svg");
+    background-image: url("/src/assets/range-thumb.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -56,7 +56,7 @@ onMounted(() => {
     border: 2px solid $color-accent;
     background-color: white;
     cursor: ew-resize;
-    background-image: url("src/assets/range-thumb.svg");
+    background-image: url("/src/assets/range-thumb.svg");
     background-repeat: no-repeat;
     background-position: center;
 }

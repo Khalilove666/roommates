@@ -88,8 +88,8 @@ const benefits = [
 </script>
 
 <style scoped lang="scss">
-@import "src/styles/mixins";
-@import "src/styles/variables";
+@import "/src/styles/mixins";
+@import "/src/styles/variables";
 
 .home-wrapper {
     background-color: $color-gray-light;
@@ -100,9 +100,9 @@ const benefits = [
     height: 666px;
     display: flex;
     justify-content: center;
-    background: url("src/assets/bg.png") no-repeat center;
+    background: url("/src/assets/bg.png") no-repeat center;
     @include media-breakpoint-only(xs) {
-        background: url("src/assets/bg-mobile.png") no-repeat center;
+        background: url("/src/assets/bg-mobile.png") no-repeat center;
         height: 538px;
         background-size: 580px 538px;
     }

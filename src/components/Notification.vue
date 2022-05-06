@@ -1,7 +1,7 @@
 <template>
     <div class="notification">
         <span class="count">1</span>
-        <img src="src/assets/bell.svg" alt="Bell icon" class="bell-img"/>
+        <img src="/src/assets/bell.svg" alt="Bell icon" class="bell-img"/>
     </div>
 </template>
 
@@ -10,7 +10,7 @@
 </script>
 
 <style scoped lang="scss">
-@import "src/styles/_variables.scss";
+@import "/src/styles/_variables.scss";
 
 .notification {
     position: relative;

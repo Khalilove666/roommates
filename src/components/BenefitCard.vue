@@ -1,7 +1,7 @@
 <template>
     <div class="benefit-card-holder" @mouseenter="handleHover" @mouseleave="handleUnhover">
         <div class="card-logo">
-            <img :src="'src/assets/benefits/' + img" alt="Mystery icon">
+            <img :src="'/src/assets/benefits/' + img" alt="Mystery icon">
         </div>
         <p class="benefit-card-title">{{ obj.title }}</p>
         <p class="benefit-card-description">{{ obj.description }}</p>
@@ -25,7 +25,7 @@ function handleUnhover() {
 </script>
 
 <style scoped lang="scss">
-@import "src/styles/variables";
+@import "/src/styles/variables";
 
 .benefit-card-holder {
     border: 3px solid white;

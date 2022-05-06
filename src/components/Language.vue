@@ -21,7 +21,7 @@
 </script>
 
 <style scoped lang="scss">
-@import "src/styles/_variables.scss";
+@import "/src/styles/_variables.scss";
 
 .language-btn {
     border: 1px solid $color-gray-dark;

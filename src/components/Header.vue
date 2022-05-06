@@ -19,11 +19,11 @@
     </div>
     <div class="mobile-wrapper">
         <div>
-            <img src="src/assets/burger.svg" alt="burger btn"/>
+            <img src="/src/assets/burger.svg" alt="burger btn"/>
         </div>
         <Logo/>
         <div>
-            <img src="src/assets/user.svg" alt="User"/>
+            <img src="/src/assets/user.svg" alt="User"/>
         </div>
     </div>
 </template>

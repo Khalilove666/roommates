@@ -8,7 +8,7 @@ const props = defineProps<{ text: string }>()
 </script>
 
 <style scoped lang="scss">
-@import "src/styles/_variables.scss";
+@import "/src/styles/_variables.scss";
 
 .btn-wrapper {
     background-color: $color-accent;

@@ -2,7 +2,7 @@
     <div class="search-wrapper">
         <input class="search-input form-control" placeholder="Search something"/>
         <span class="search-btn">
-            <img src="src/assets/search.svg" class="search-icon" alt="search icon">
+            <img src="/src/assets/search.svg" class="search-icon" alt="search icon">
         </span>
     </div>
 </template>
@@ -12,7 +12,7 @@
 </script>
 
 <style scoped lang="scss">
-@import "src/styles/_variables.scss";
+@import "/src/styles/_variables.scss";
 
 .search-wrapper {
     position: relative;

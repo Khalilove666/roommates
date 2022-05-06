@@ -6,16 +6,16 @@
                 <div class="d-flex">
                     <div class="logo-social" v-for="item in socials" :key="item.id"
                          :class="item.id !== 1 ? 'ms-3': ''">
-                        <img :src="'src/assets/social/'+ item.icon" alt="Social media youtube">
+                        <img :src="'/src/assets/social/'+ item.icon" alt="Social media youtube">
                     </div>
                 </div>
             </div>
             <div class="stores-wrapper">
                 <div class="logo-store">
-                    <img src="src/assets/store/google-play.svg" alt="Mobile store google play">
+                    <img src="/src/assets/store/google-play.svg" alt="Mobile store google play">
                 </div>
                 <div class="logo-store">
-                    <img src="src/assets/store/apple-store.svg" alt="Mobile store google play">
+                    <img src="/src/assets/store/apple-store.svg" alt="Mobile store google play">
                 </div>
             </div>
         </div>
@@ -59,8 +59,8 @@ const socials = [
 </script>
 
 <style scoped lang="scss">
-@import "src/styles/variables";
-@import "src/styles/mixins";
+@import "/src/styles/variables";
+@import "/src/styles/mixins";
 
 .footer {
     padding: 30px 0;
