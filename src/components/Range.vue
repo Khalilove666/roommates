@@ -10,14 +10,15 @@ import {onMounted, ref} from "vue";
 
 const range = ref(50);
 
-function handleInputChange(e: Event) {
+function handleInputChange(e: any) {
     const target = e.target;
-    const max = target!.max;
-    const val = target!.value;
+    const max = target.max;
+    const val = target.value;
     const res = (val / max) * 100;
     const inputRange = document.getElementById("rangeInput");
     inputRange!.style.background = `linear-gradient(to right, #4079FF ${res}%, #F5F6F8 ${res}%)`;
 }
+
 onMounted(() => {
     const inputRange = document.getElementById("rangeInput");
     inputRange!.style.background = `linear-gradient(to right, #4079FF ${50}%, #F5F6F8 ${50}%)`;

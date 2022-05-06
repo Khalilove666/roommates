@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!(mq.md || mq.xs || mq.sm)" class="wrapper">
+    <div class="wrapper">
         <div class="d-flex justify-content-between">
             <div class="d-flex">
                 <Logo/>
@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <div v-else class="mobile-wrapper d-flex justify-content-between align-items-center">
+    <div class="mobile-wrapper">
         <div>
             <img src="src/assets/burger.svg" alt="burger btn"/>
         </div>
@@ -35,17 +35,22 @@ import Language from "./Language.vue";
 import User from "./User.vue";
 import Notification from "./Notification.vue";
 
-import {useMq} from "vue3-mq";
+// import {useMq} from "vue3-mq";
 
-const mq = useMq();
+// const mq = useMq();
 
 </script>
 
 <style scoped lang="scss">
 @import "src/styles/_variables.scss";
+@import "src/styles/mixins";
 
 .wrapper {
     padding: 30px 60px;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
 
     .vertical-line {
         height: 100%;
@@ -66,6 +71,12 @@ const mq = useMq();
 }
 
 .mobile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
 }
 </style>
