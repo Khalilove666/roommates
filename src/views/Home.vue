@@ -50,41 +50,53 @@ import Button from "../components/Button.vue";
 import {ref} from "vue";
 import Range from "../components/Range.vue";
 import BenefitCard from "../components/BenefitCard.vue";
+import imgLowPrice from "../assets/benefits/low-price.svg";
+import imgLowPriceSelected from "../assets/benefits/low-price-selected.svg";
+import imgTimeline from "../assets/benefits/timeline.svg";
+import imgTimelineSelected from "../assets/benefits/timeline-selected.svg";
+import imgDiscussion from "../assets/benefits/discussion.svg";
+import imgDiscussionSelected from "../assets/benefits/discussion-selected.svg";
+import imgMystery from "../assets/benefits/mystery.svg";
+import imgMysterySelected from "../assets/benefits/mystery-selected.svg";
 
 const benefits = [
     {
         id: 1,
         title: "Low down payments",
         description: "We offer a variety of loan options to meet your unique needs.",
-        img: "low-price.svg",
-        imgSelected: "low-price-selected.svg",
+        img: imgLowPrice,
+        imgSelected: imgLowPriceSelected,
         alt: "Low-price icon",
     },
     {
         id: 2,
         title: "Works with your timeline",
         description: "Count on us to respond ASAP and always meet deadlines.",
-        img: "timeline.svg",
-        imgSelected: "timeline-selected.svg",
+        img: imgTimeline,
+        imgSelected: imgTimelineSelected,
         alt: "Timeline icon",
     },
     {
         id: 3,
         title: "Best in class service",
         description: "Clear communication, friendly staff, and local market expertise.",
-        img: "discussion.svg",
-        imgSelected: "discussion-selected.svg",
+        img: imgDiscussion,
+        imgSelected: imgDiscussionSelected,
         alt: "Discussion icon",
     },
     {
         id: 4,
         title: "Total transparency",
         description: "We'll always keep you and your agent informed and up-to-date.",
-        img: "mystery.svg",
-        imgSelected: "mystery-selected.svg",
+        img: imgMystery,
+        imgSelected: imgMysterySelected,
         alt: "Mystery icon",
     },
 ]
+
+function getImg(name: string) {
+    // return (`/src/assets/benefits/${name}`)
+}
 </script>
 
 <style scoped lang="scss">

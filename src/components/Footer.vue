@@ -4,9 +4,12 @@
             <div class="logo-and-socials-wrapper">
                 <Logo/>
                 <div class="d-flex">
-                    <div class="logo-social" v-for="item in socials" :key="item.id"
-                         :class="item.id !== 1 ? 'ms-3': ''">
-                        <img :src="'/src/assets/social/'+ item.icon" alt="Social media youtube">
+                    <div class="logo-social"
+                         v-for="item in socials"
+                         :key="item.id"
+                         :class="item.id !== 1 ? 'ms-3': ''"
+                    >
+                        <img :src="item.icon" alt="Social media icon">
                     </div>
                 </div>
             </div>
@@ -37,23 +40,27 @@
 
 <script setup lang="ts">
 import Logo from "./Logo.vue";
+import imgYoutube from "../assets/social/youtube.svg";
+import imgLinkedin from "../assets/social/linkedin.svg";
+import imgInstagram from "../assets/social/instagram.svg";
+import imgFacebook from "../assets/social/facebook.svg";
 
 const socials = [
     {
         id: 1,
-        icon: "youtube.svg",
+        icon: imgYoutube,
     },
     {
         id: 2,
-        icon: "linkedin.svg",
+        icon: imgLinkedin,
     },
     {
         id: 3,
-        icon: "instagram.svg",
+        icon: imgInstagram,
     },
     {
         id: 4,
-        icon: "facebook.svg",
+        icon: imgFacebook,
     },
 ]
 </script>

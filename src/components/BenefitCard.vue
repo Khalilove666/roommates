@@ -1,7 +1,7 @@
 <template>
     <div class="benefit-card-holder" @mouseenter="handleHover" @mouseleave="handleUnhover">
         <div class="card-logo">
-            <img :src="'/src/assets/benefits/' + img" alt="Mystery icon">
+            <img :src="img" :alt="obj.alt">
         </div>
         <p class="benefit-card-title">{{ obj.title }}</p>
         <p class="benefit-card-description">{{ obj.description }}</p>
@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const props = defineProps<{ obj: { img: string, imgSelected: string, title: string, description: string } }>();
+const props = defineProps<{ obj: { img: string, imgSelected: string, title: string, description: string, alt: string } }>();
 
 const img = ref(props.obj.img);
 

@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex">
         <div class="img-holder">
-            <img src="/src/assets/evelyn.jpg" class="user-img" alt="User picture">
+            <img src="/src/assets/placeholder.png" class="user-img" alt="User picture">
         </div>
         <div class="d-flex flex-column ms-3">
             <span class="username">Richard Lucas</span>
